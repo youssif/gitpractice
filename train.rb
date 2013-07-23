@@ -14,6 +14,10 @@ class Train
     distance / @speed
   end
 
+  def trip_distance(duration)
+    @speed*duration
+  end
+
   def power_source
     if @model.include?('-A')
       'steam'
